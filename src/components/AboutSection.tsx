@@ -9,7 +9,7 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <Badge className="bg-truck-blue mb-4">Desde 2005</Badge>
+            <Badge className="bg-truck-red mb-4">Desde 2005</Badge>
             <h2 className="section-title">Por que escolher a ALPHA TRUCK?</h2>
             <p className="text-lg mb-6 text-truck-gray-medium">
               Somos especialistas em manutenção e funilaria de caminhões de todas as marcas e modelos.
@@ -19,36 +19,36 @@ const AboutSection = () => {
             
             <div className="space-y-4 mb-8">
               <div className="flex items-start">
-                <span className="flex-shrink-0 w-6 h-6 rounded-full bg-truck-blue flex items-center justify-center text-white font-bold mr-3">✓</span>
+                <span className="flex-shrink-0 w-6 h-6 rounded-full bg-truck-red flex items-center justify-center text-white font-bold mr-3">✓</span>
                 <p className="text-truck-gray"><strong>Rapidez e eficiência</strong> - Entregamos seu caminhão no menor prazo possível.</p>
               </div>
               <div className="flex items-start">
-                <span className="flex-shrink-0 w-6 h-6 rounded-full bg-truck-blue flex items-center justify-center text-white font-bold mr-3">✓</span>
+                <span className="flex-shrink-0 w-6 h-6 rounded-full bg-truck-red flex items-center justify-center text-white font-bold mr-3">✓</span>
                 <p className="text-truck-gray"><strong>Atendimento personalizado</strong> - Entendemos as necessidades específicas de cada cliente.</p>
               </div>
               <div className="flex items-start">
-                <span className="flex-shrink-0 w-6 h-6 rounded-full bg-truck-blue flex items-center justify-center text-white font-bold mr-3">✓</span>
+                <span className="flex-shrink-0 w-6 h-6 rounded-full bg-truck-red flex items-center justify-center text-white font-bold mr-3">✓</span>
                 <p className="text-truck-gray"><strong>Peças originais</strong> - Trabalhamos apenas com peças de alta qualidade e garantia.</p>
               </div>
               <div className="flex items-start">
-                <span className="flex-shrink-0 w-6 h-6 rounded-full bg-truck-blue flex items-center justify-center text-white font-bold mr-3">✓</span>
+                <span className="flex-shrink-0 w-6 h-6 rounded-full bg-truck-red flex items-center justify-center text-white font-bold mr-3">✓</span>
                 <p className="text-truck-gray"><strong>Garantia de serviço</strong> - Todos os nossos serviços possuem garantia.</p>
               </div>
             </div>
             
-            <Button asChild className="bg-truck-blue hover:bg-truck-blue-light">
+            <Button asChild className="bg-truck-red hover:bg-truck-red-light">
               <Link to="/sobre">Conheça nossa empresa</Link>
             </Button>
           </div>
           
           <div className="relative">
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-truck-blue opacity-30 rounded-full"></div>
+            <div className="absolute -top-4 -left-4 w-24 h-24 bg-truck-red opacity-30 rounded-full"></div>
             <img 
-              src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1740&auto=format&fit=crop" 
+              src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
               alt="Oficina ALPHA TRUCK" 
               className="rounded-lg shadow-xl w-full h-[400px] object-cover relative z-10"
             />
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-truck-blue opacity-20 rounded-full"></div>
+            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-truck-red opacity-20 rounded-full"></div>
           </div>
         </div>
       </div>

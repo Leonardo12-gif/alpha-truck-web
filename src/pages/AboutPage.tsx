@@ -37,22 +37,22 @@ const AboutPage = () => {
             <div className="relative">
               <div className="grid grid-cols-2 gap-4">
                 <img 
-                  src="https://i.imgur.com/iVEjffq.jpg" 
+                  src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
                   alt="Oficina ALPHA TRUCK" 
                   className="rounded-lg h-64 w-full object-cover hover-scale"
                 />
                 <img 
-                  src="https://i.imgur.com/pZ5YEUP.jpg" 
+                  src="https://images.unsplash.com/photo-1586191582056-d64f7a98e60f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
                   alt="Equipe ALPHA TRUCK" 
                   className="rounded-lg h-64 w-full object-cover hover-scale"
                 />
                 <img 
-                  src="https://i.imgur.com/UPQBWD5.jpg" 
+                  src="https://images.unsplash.com/photo-1573737823277-160616dd4cc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
                   alt="Manutenção de caminhões" 
                   className="rounded-lg h-64 w-full object-cover hover-scale"
                 />
                 <img 
-                  src="https://i.imgur.com/fym5zaA.jpg" 
+                  src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
                   alt="Funilaria" 
                   className="rounded-lg h-64 w-full object-cover hover-scale"
                 />
@@ -127,21 +127,21 @@ const AboutPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="aspect-video rounded-lg overflow-hidden">
               <img 
-                src="https://i.imgur.com/hRlwXMq.jpg" 
+                src="https://images.unsplash.com/photo-1616432043562-3671ea2e5242?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" 
                 alt="Estrutura ALPHA TRUCK" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="aspect-video rounded-lg overflow-hidden">
               <img 
-                src="https://i.imgur.com/k2KHAt0.jpg" 
+                src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
                 alt="Oficina ALPHA TRUCK" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="aspect-video rounded-lg overflow-hidden">
               <img 
-                src="https://i.imgur.com/zJrHSWN.jpg" 
+                src="https://images.unsplash.com/photo-1613743801117-0fa2189dbda7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" 
                 alt="Equipamentos ALPHA TRUCK" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
