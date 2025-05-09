@@ -55,7 +55,7 @@ const ServicesSection = () => {
         </div>
 
         <div className="text-center">
-          <Button asChild size="lg" className="bg-truck-blue hover:bg-truck-blue-light">
+          <Button asChild size="lg" className="bg-truck-red hover:bg-truck-red-light">
             <Link to="/servicos">Ver todos os serviços</Link>
           </Button>
         </div>

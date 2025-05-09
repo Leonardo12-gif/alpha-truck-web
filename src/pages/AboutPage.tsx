@@ -6,7 +6,7 @@ import BrandsSection from "@/components/BrandsSection";
 const AboutPage = () => {
   return (
     <main>
-      <section className="bg-truck-blue py-16">
+      <section className="bg-truck-red py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center text-white">
             <h1 className="text-4xl font-bold mb-4">Sobre Nós</h1>
@@ -21,7 +21,7 @@ const AboutPage = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge className="bg-truck-blue mb-4">Desde 2005</Badge>
+              <Badge className="bg-truck-red mb-4">Desde 2005</Badge>
               <h2 className="section-title">Nossa História</h2>
               <p className="text-lg mb-6 text-truck-gray-medium">
                 A ALPHA TRUCK foi fundada em 2005 com o objetivo de oferecer serviços de manutenção e funilaria de alta qualidade para caminhões. Iniciamos com uma pequena oficina e hoje contamos com uma estrutura completa e equipe altamente qualificada.
@@ -37,22 +37,22 @@ const AboutPage = () => {
             <div className="relative">
               <div className="grid grid-cols-2 gap-4">
                 <img 
-                  src="https://images.unsplash.com/photo-1566933293169-c86f3f0ce0b5?q=80&w=1740&auto=format&fit=crop" 
+                  src="https://i.imgur.com/iVEjffq.jpg" 
                   alt="Oficina ALPHA TRUCK" 
                   className="rounded-lg h-64 w-full object-cover hover-scale"
                 />
                 <img 
-                  src="https://images.unsplash.com/photo-1493238792000-8113da705763?q=80&w=1740&auto=format&fit=crop" 
+                  src="https://i.imgur.com/pZ5YEUP.jpg" 
                   alt="Equipe ALPHA TRUCK" 
                   className="rounded-lg h-64 w-full object-cover hover-scale"
                 />
                 <img 
-                  src="https://images.unsplash.com/photo-1597680538571-19b0e443a737?q=80&w=1740&auto=format&fit=crop" 
+                  src="https://i.imgur.com/UPQBWD5.jpg" 
                   alt="Manutenção de caminhões" 
                   className="rounded-lg h-64 w-full object-cover hover-scale"
                 />
                 <img 
-                  src="https://images.unsplash.com/photo-1595062045815-5d55b3880de6?q=80&w=1740&auto=format&fit=crop" 
+                  src="https://i.imgur.com/fym5zaA.jpg" 
                   alt="Funilaria" 
                   className="rounded-lg h-64 w-full object-cover hover-scale"
                 />
@@ -73,8 +73,8 @@ const AboutPage = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-              <div className="w-16 h-16 bg-truck-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Trophy className="h-8 w-8 text-truck-blue" />
+              <div className="w-16 h-16 bg-truck-red/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Trophy className="h-8 w-8 text-truck-red" />
               </div>
               <h3 className="text-xl font-bold text-truck-gray mb-2">Excelência</h3>
               <p className="text-truck-gray-medium">
@@ -83,8 +83,8 @@ const AboutPage = () => {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-              <div className="w-16 h-16 bg-truck-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Wrench className="h-8 w-8 text-truck-blue" />
+              <div className="w-16 h-16 bg-truck-red/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Wrench className="h-8 w-8 text-truck-red" />
               </div>
               <h3 className="text-xl font-bold text-truck-gray mb-2">Qualidade</h3>
               <p className="text-truck-gray-medium">
@@ -93,8 +93,8 @@ const AboutPage = () => {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-              <div className="w-16 h-16 bg-truck-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Truck className="h-8 w-8 text-truck-blue" />
+              <div className="w-16 h-16 bg-truck-red/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Truck className="h-8 w-8 text-truck-red" />
               </div>
               <h3 className="text-xl font-bold text-truck-gray mb-2">Eficiência</h3>
               <p className="text-truck-gray-medium">
@@ -103,8 +103,8 @@ const AboutPage = () => {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-              <div className="w-16 h-16 bg-truck-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="h-8 w-8 text-truck-blue" />
+              <div className="w-16 h-16 bg-truck-red/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="h-8 w-8 text-truck-red" />
               </div>
               <h3 className="text-xl font-bold text-truck-gray mb-2">Confiança</h3>
               <p className="text-truck-gray-medium">
@@ -127,21 +127,21 @@ const AboutPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="aspect-video rounded-lg overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1583103013297-b38b935ecd28?q=80&w=1740&auto=format&fit=crop" 
+                src="https://i.imgur.com/hRlwXMq.jpg" 
                 alt="Estrutura ALPHA TRUCK" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="aspect-video rounded-lg overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1669756224762-2ae8f6f67697?q=80&w=1856&auto=format&fit=crop" 
+                src="https://i.imgur.com/k2KHAt0.jpg" 
                 alt="Oficina ALPHA TRUCK" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="aspect-video rounded-lg overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1581091878591-4f0714c6f32f?q=80&w=1588&auto=format&fit=crop" 
+                src="https://i.imgur.com/zJrHSWN.jpg" 
                 alt="Equipamentos ALPHA TRUCK" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
               />

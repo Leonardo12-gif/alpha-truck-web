@@ -13,8 +13,8 @@ const ServiceCard = ({ title, description, icon: Icon }: ServiceCardProps) => {
     <Card className="service-card">
       <CardHeader className="pb-2">
         <div className="flex items-center gap-3">
-          <div className="bg-truck-blue/10 p-2 rounded-md">
-            <Icon className="h-6 w-6 text-truck-blue" />
+          <div className="bg-truck-red/10 p-2 rounded-md">
+            <Icon className="h-6 w-6 text-truck-red" />
           </div>
           <CardTitle className="text-xl">{title}</CardTitle>
         </div>

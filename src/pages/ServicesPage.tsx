@@ -59,7 +59,7 @@ const ServicesPage = () => {
 
   return (
     <main>
-      <section className="bg-truck-blue py-16">
+      <section className="bg-truck-red py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center text-white">
             <h1 className="text-4xl font-bold mb-4">Nossos Serviços</h1>
@@ -77,8 +77,8 @@ const ServicesPage = () => {
             {services.map((service, index) => (
               <div key={index} className="border border-gray-100 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="bg-truck-blue/10 p-3 rounded-md">
-                    <service.icon className="h-6 w-6 text-truck-blue" />
+                  <div className="bg-truck-red/10 p-3 rounded-md">
+                    <service.icon className="h-6 w-6 text-truck-red" />
                   </div>
                   <h3 className="text-xl font-bold text-truck-gray">{service.title}</h3>
                 </div>
@@ -98,7 +98,7 @@ const ServicesPage = () => {
             Entre em contato conosco para solicitar um orçamento ou tirar
             dúvidas sobre nossos serviços.
           </p>
-          <Button className="bg-truck-blue hover:bg-truck-blue-light mt-4" size="lg" asChild>
+          <Button className="bg-truck-red hover:bg-truck-red-light mt-4" size="lg" asChild>
             <a href="/contato">Solicitar orçamento</a>
           </Button>
         </div>

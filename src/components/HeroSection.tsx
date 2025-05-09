@@ -6,7 +6,7 @@ const HeroSection = () => {
   return <div className="relative bg-gradient-to-r from-truck-gray to-truck-red text-white">
       <div className="absolute inset-0 bg-black/50 z-10"></div>
       <div className="h-[80vh] bg-cover bg-center" style={{
-      backgroundImage: "url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=1740&auto=format&fit=crop')"
+      backgroundImage: "url('https://i.imgur.com/zczHNZ7.jpg')"
     }}>
         <div className="container mx-auto h-full flex items-center relative z-20">
           <div className="max-w-2xl px-4">
