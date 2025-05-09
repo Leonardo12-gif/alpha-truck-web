@@ -1,7 +1,9 @@
+
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+
 const HeroSection = () => {
-  return <div className="relative bg-gradient-to-r from-truck-gray to-truck-blue text-white">
+  return <div className="relative bg-gradient-to-r from-truck-gray to-truck-red text-white">
       <div className="absolute inset-0 bg-black/50 z-10"></div>
       <div className="h-[80vh] bg-cover bg-center" style={{
       backgroundImage: "url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=1740&auto=format&fit=crop')"
@@ -18,7 +20,7 @@ const HeroSection = () => {
               Seu parceiro de confiança na estrada.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" className="bg-truck-blue hover:bg-truck-blue-light">
+              <Button asChild size="lg" className="bg-truck-red hover:bg-truck-red-light">
                 <Link to="/servicos">Nossos Serviços</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 border-white">
@@ -30,4 +32,5 @@ const HeroSection = () => {
       </div>
     </div>;
 };
+
 export default HeroSection;

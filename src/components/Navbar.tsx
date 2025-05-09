@@ -1,21 +1,29 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
+  
   return <nav className="bg-white shadow-sm fixed w-full z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-3">
-            <span className="text-2xl font-bold text-red-600">ALPHA</span>
-            <span className="text-2xl font-bold text-truck-gray">TRUCK</span>
+            <img 
+              src="/lovable-uploads/a172d41b-132b-47d6-893e-785ed6dbead2.png" 
+              alt="ALPHA TRUCK Logo" 
+              className="h-12"
+            />
           </Link>
 
           {/* Desktop menu */}
@@ -55,7 +63,7 @@ const NavLink = ({
   to: string;
   children: React.ReactNode;
 }) => {
-  return <Link to={to} className="text-truck-gray hover:text-truck-blue font-medium transition-colors relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-truck-blue after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
+  return <Link to={to} className="text-truck-gray hover:text-truck-red font-medium transition-colors relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-truck-red after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
       {children}
     </Link>;
 };
@@ -70,8 +78,9 @@ const MobileNavLink = ({
   children: React.ReactNode;
   onClick: () => void;
 }) => {
-  return <Link to={to} className="text-truck-gray hover:text-truck-blue font-medium py-2 transition-colors" onClick={onClick}>
+  return <Link to={to} className="text-truck-gray hover:text-truck-red font-medium py-2 transition-colors" onClick={onClick}>
       {children}
     </Link>;
 };
+
 export default Navbar;

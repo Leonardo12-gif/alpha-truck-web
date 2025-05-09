@@ -52,7 +52,7 @@
 
   .service-card::before {
     content: '';
-    @apply absolute top-0 left-0 w-1 h-full bg-truck-blue;
+    @apply absolute top-0 left-0 w-1 h-full bg-truck-red;
   }
 
   .section-title {
