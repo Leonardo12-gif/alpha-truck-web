@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/a172d41b-132b-47d6-893e-785ed6dbead2.png" 
+              src="/lovable-uploads/9c1a4ee8-89a1-4d57-94ef-672a86d05278.png" 
               alt="ALPHA TRUCK Logo" 
               className="h-12"
             />
@@ -63,7 +63,7 @@ const NavLink = ({
   to: string;
   children: React.ReactNode;
 }) => {
-  return <Link to={to} className="text-truck-gray hover:text-truck-red font-medium transition-colors relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-truck-red after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
+  return <Link to={to} className="text-truck-gray hover:text-black font-medium transition-colors relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-black after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
       {children}
     </Link>;
 };
@@ -78,7 +78,7 @@ const MobileNavLink = ({
   children: React.ReactNode;
   onClick: () => void;
 }) => {
-  return <Link to={to} className="text-truck-gray hover:text-truck-red font-medium py-2 transition-colors" onClick={onClick}>
+  return <Link to={to} className="text-truck-gray hover:text-black font-medium py-2 transition-colors" onClick={onClick}>
       {children}
     </Link>;
 };

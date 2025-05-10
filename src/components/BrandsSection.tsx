@@ -3,11 +3,11 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 
 const BrandsSection = () => {
   const brands = [
-    { name: "Volvo", logo: "https://i.imgur.com/RPzSabj.png" },
-    { name: "Mercedes-Benz", logo: "https://i.imgur.com/hpxcAm6.png" },
-    { name: "Volkswagen", logo: "https://i.imgur.com/aZYPMJl.png" },
-    { name: "Scania", logo: "https://i.imgur.com/R4iJREd.png" },
-    { name: "DAF", logo: "https://i.imgur.com/sovsJYj.png" }
+    { name: "Volvo", logo: "https://i.imgur.com/hUliHVq.png" },
+    { name: "Mercedes-Benz", logo: "https://i.imgur.com/4pRZLXP.png" },
+    { name: "Volkswagen", logo: "https://i.imgur.com/raQ4KE1.png" },
+    { name: "Scania", logo: "https://i.imgur.com/cN6C0Sr.png" },
+    { name: "DAF", logo: "https://i.imgur.com/MQTj53B.png" }
   ];
 
   return (

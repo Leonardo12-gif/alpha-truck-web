@@ -64,10 +64,10 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				truck: {
-					blue: '#1E3A8A', // keeping for backward compatibility
-					'blue-light': '#2563EB', // keeping for backward compatibility
-					red: '#ea384c', // cor da águia do logo
-					'red-light': '#f05365', // versão mais clara para hover
+					blue: '#000000', // alterado para preto
+					'blue-light': '#333333', // alterado para cinza escuro
+					red: '#000000', // alterado para preto
+					'red-light': '#333333', // alterado para cinza escuro
 					gray: '#333333',
 					'gray-medium': '#8E9196',
 					'gray-light': '#F6F6F7',
