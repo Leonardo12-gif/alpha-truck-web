@@ -7,13 +7,13 @@ const testimonials = [
   {
     name: "Transkompa",
     role: "Empresa de transportes",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    image: "/lovable-uploads/a9201555-aa39-4ca0-8776-6cfba9c06c61.png",
     content: "Excelente atendimento! Os serviços da ALPHA TRUCK são sempre de alta qualidade e com prazo de entrega impecável."
   },
   {
     name: "Gafor",
     role: "Gestão completa de frota",
-    image: "https://randomuser.me/api/portraits/men/41.jpg",
+    image: "/lovable-uploads/12f1e229-d21d-4037-9818-0b7e2e48af4d.png",
     content: "A ALPHA TRUCK é responsável pela manutenção de toda nossa frota de caminhões. Parceria de confiança que tem sido fundamental para nossa operação logística."
   },
   {
@@ -25,7 +25,7 @@ const testimonials = [
   {
     name: "Agrociro",
     role: "Empresa do agronegócio",
-    image: "https://randomuser.me/api/portraits/women/24.jpg",
+    image: "/lovable-uploads/eb65a80d-837f-492e-a094-77ed8bed8d74.png",
     content: "Contratamos a ALPHA TRUCK para manutenção preventiva de toda nossa frota e o resultado foi excelente. Recomendamos!"
   }
 ];
@@ -54,8 +54,8 @@ const TestimonialsSection = () => {
                 <Card className="border border-gray-100 shadow-sm h-full">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-4 mb-4">
-                      <Avatar>
-                        <AvatarImage src={testimonial.image} alt={testimonial.name} />
+                      <Avatar className="h-16 w-16">
+                        <AvatarImage src={testimonial.image} alt={testimonial.name} className="object-contain" />
                         <AvatarFallback>{testimonial.name.substring(0, 2)}</AvatarFallback>
                       </Avatar>
                       <div>
