@@ -1,38 +1,39 @@
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { MessageSquare, MapPin, Phone, Mail } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
-
 const ContactSection = () => {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     message: ""
   });
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
+    const {
+      name,
+      value
+    } = e.target;
     setFormData(prevState => ({
       ...prevState,
       [name]: value
     }));
   };
-
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-    
+
     // Simulate form submission
     toast({
       title: "Mensagem enviada!",
-      description: "Entraremos em contato em breve.",
+      description: "Entraremos em contato em breve."
     });
-    
+
     // Reset form
     setFormData({
       name: "",
@@ -41,9 +42,7 @@ const ContactSection = () => {
       message: ""
     });
   };
-
-  return (
-    <section className="py-20 bg-truck-gray-light" id="contato">
+  return <section className="py-20 bg-truck-gray-light" id="contato">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="section-title">Entre em Contato</h2>
@@ -61,15 +60,7 @@ const ContactSection = () => {
                 <label htmlFor="name" className="text-sm font-medium text-truck-gray">
                   Nome completo
                 </label>
-                <Input
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  placeholder="Seu nome"
-                  required
-                  className="mt-1"
-                />
+                <Input id="name" name="name" value={formData.name} onChange={handleChange} placeholder="Seu nome" required className="mt-1" />
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -77,29 +68,13 @@ const ContactSection = () => {
                   <label htmlFor="email" className="text-sm font-medium text-truck-gray">
                     E-mail
                   </label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    placeholder="seu@email.com"
-                    required
-                    className="mt-1"
-                  />
+                  <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} placeholder="seu@email.com" required className="mt-1" />
                 </div>
                 <div>
                   <label htmlFor="phone" className="text-sm font-medium text-truck-gray">
                     Telefone
                   </label>
-                  <Input
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    placeholder="(00) 00000-0000"
-                    className="mt-1"
-                  />
+                  <Input id="phone" name="phone" value={formData.phone} onChange={handleChange} placeholder="(00) 00000-0000" className="mt-1" />
                 </div>
               </div>
               
@@ -107,15 +82,7 @@ const ContactSection = () => {
                 <label htmlFor="message" className="text-sm font-medium text-truck-gray">
                   Mensagem
                 </label>
-                <Textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  placeholder="Como podemos ajudar?"
-                  required
-                  className="mt-1 h-32"
-                />
+                <Textarea id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Como podemos ajudar?" required className="mt-1 h-32" />
               </div>
               
               <Button type="submit" className="w-full bg-truck-blue hover:bg-truck-blue-light">
@@ -141,7 +108,7 @@ const ContactSection = () => {
                   <Phone className="h-5 w-5 text-truck-blue mr-3 mt-1" />
                   <div>
                     <h4 className="font-medium text-truck-gray">Telefone</h4>
-                    <p className="text-truck-gray-medium">(11) 99999-9999</p>
+                    <p className="text-truck-gray-medium">(11) 99685-9025</p>
                   </div>
                 </div>
                 
@@ -149,7 +116,7 @@ const ContactSection = () => {
                   <Mail className="h-5 w-5 text-truck-blue mr-3 mt-1" />
                   <div>
                     <h4 className="font-medium text-truck-gray">E-mail</h4>
-                    <p className="text-truck-gray-medium">contato@alphatruck.com.br</p>
+                    <p className="text-truck-gray-medium">alphatruckpecas@gmail.com</p>
                   </div>
                 </div>
                 
@@ -157,7 +124,7 @@ const ContactSection = () => {
                   <MessageSquare className="h-5 w-5 text-truck-blue mr-3 mt-1" />
                   <div>
                     <h4 className="font-medium text-truck-gray">WhatsApp</h4>
-                    <p className="text-truck-gray-medium">(11) 99999-9999</p>
+                    <p className="text-truck-gray-medium">(11) 99685-9025</p>
                   </div>
                 </div>
               </div>
@@ -183,8 +150,6 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactSection;
