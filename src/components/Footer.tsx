@@ -1,11 +1,7 @@
-
 import { Link } from "react-router-dom";
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
-  return (
-    <footer className="bg-truck-gray text-white py-12">
+  return <footer className="bg-truck-gray text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
@@ -44,15 +40,9 @@ const Footer = () => {
           
           <div>
             <h3 className="text-xl font-bold mb-4">Contato</h3>
-            <p className="text-gray-300 mb-2">
-              Telefone: (11) 99999-9999
-            </p>
-            <p className="text-gray-300 mb-2">
-              Email: contato@alphatruck.com.br
-            </p>
-            <p className="text-gray-300 mb-2">
-              Endereço: Av. dos Caminhões, 1000 - São Paulo/SP
-            </p>
+            <p className="text-gray-300 mb-2">Telefone: (11) 99685-9025</p>
+            <p className="text-gray-300 mb-2">Email: alphatruckpecas@gmail.com</p>
+            <p className="text-gray-300 mb-2">Endereço: Rodovia Raposo Tavares Km 108,5 N° 6201 - Parque Reserva Fazenda Imperial, Sorocaba - SP, 18052-905.</p>
           </div>
         </div>
         
@@ -60,8 +50,6 @@ const Footer = () => {
           <p>&copy; {currentYear} ALPHA TRUCK. Todos os direitos reservados.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
