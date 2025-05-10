@@ -133,7 +133,7 @@ const ContactSection = () => {
                   <MapPin className="h-5 w-5 text-truck-blue mr-3 mt-1" />
                   <div>
                     <h4 className="font-medium text-truck-gray">Endereço</h4>
-                    <p className="text-truck-gray-medium">Av. dos Caminhões, 1000 - São Paulo/SP</p>
+                    <p className="text-truck-gray-medium">Rodovia Raposo Tavares Km 108,5 N° 6201 - Parque Reserva Fazenda Imperial, Sorocaba - SP, 18052-905</p>
                   </div>
                 </div>
                 

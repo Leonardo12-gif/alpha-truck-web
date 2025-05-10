@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/7b98b29e-4e22-4c79-b5b1-38b08902c8ad.png" 
+              src="/lovable-uploads/d76370a7-a58b-40cf-aa1e-ecd3da948e01.png" 
               alt="ALPHA TRUCK Logo" 
               className="h-12"
             />

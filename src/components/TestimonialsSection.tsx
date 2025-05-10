@@ -5,26 +5,26 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 
 const testimonials = [
   {
-    name: "Carlos Silva",
-    role: "Motorista autônomo",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
-    content: "Excelente atendimento! Meu caminhão estava com problema no motor e em 2 dias já estava na estrada novamente. Recomendo demais!"
-  },
-  {
-    name: "Transportes Veloz Ltda.",
+    name: "Transkompa",
     role: "Empresa de transportes",
-    image: "https://randomuser.me/api/portraits/men/41.jpg",
-    content: "Nossa frota toda é atendida pela ALPHA TRUCK. O serviço é rápido, eficiente e com ótimo custo-benefício. Parceiros de confiança."
+    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    content: "Excelente atendimento! Os serviços da ALPHA TRUCK são sempre de alta qualidade e com prazo de entrega impecável."
   },
   {
-    name: "Marcelo Oliveira",
-    role: "Motorista de longa distância",
+    name: "Gafor",
+    role: "Gestão completa de frota",
+    image: "https://randomuser.me/api/portraits/men/41.jpg",
+    content: "A ALPHA TRUCK é responsável pela manutenção de toda nossa frota de caminhões. Parceria de confiança que tem sido fundamental para nossa operação logística."
+  },
+  {
+    name: "Carlos",
+    role: "Motorista autônomo",
     image: "https://randomuser.me/api/portraits/men/53.jpg",
     content: "Precisei de um serviço de funilaria urgente e fui muito bem atendido. O acabamento ficou perfeito, parecia novo!"
   },
   {
-    name: "Express Logística",
-    role: "Empresa de logística",
+    name: "Agrociro",
+    role: "Empresa do agronegócio",
     image: "https://randomuser.me/api/portraits/women/24.jpg",
     content: "Contratamos a ALPHA TRUCK para manutenção preventiva de toda nossa frota e o resultado foi excelente. Recomendamos!"
   }
