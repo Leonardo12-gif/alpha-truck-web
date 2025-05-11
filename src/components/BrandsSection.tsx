@@ -1,4 +1,12 @@
 
+import { useIsMobile } from "@/hooks/use-mobile";
+import { 
+  Carousel, 
+  CarouselContent, 
+  CarouselItem, 
+  CarouselNext, 
+  CarouselPrevious 
+} from "@/components/ui/carousel";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
 const BrandsSection = () => {
@@ -10,6 +18,8 @@ const BrandsSection = () => {
     { name: "DAF", logo: "/lovable-uploads/9a4df358-9829-4ef2-88ce-7c2cb824cceb.png" }
   ];
 
+  const isMobile = useIsMobile();
+
   return (
     <section className="py-12 bg-white">
       <div className="container mx-auto px-4">
@@ -17,22 +27,49 @@ const BrandsSection = () => {
           Marcas que atendemos
         </h2>
         
-        <ScrollArea className="w-full whitespace-nowrap rounded-md">
-          <div className="flex space-x-12 py-4">
-            {brands.map((brand) => (
-              <div key={brand.name} className="flex flex-col items-center shrink-0">
-                <div className="w-32 h-32 bg-white flex items-center justify-center p-4">
-                  <img 
-                    src={brand.logo} 
-                    alt={`Logo ${brand.name}`} 
-                    className="max-w-full max-h-full object-contain transition-all duration-300"
-                  />
-                </div>
-                <span className="text-truck-gray-medium text-sm mt-2">{brand.name}</span>
+        {isMobile ? (
+          <div className="relative mt-4 w-full max-w-full">
+            <Carousel className="w-full">
+              <CarouselContent>
+                {brands.map((brand) => (
+                  <CarouselItem key={brand.name} className="basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
+                    <div className="flex flex-col items-center h-full">
+                      <div className="w-32 h-32 bg-white flex items-center justify-center p-4">
+                        <img 
+                          src={brand.logo} 
+                          alt={`Logo ${brand.name}`} 
+                          className="max-w-full max-h-full object-contain transition-all duration-300"
+                        />
+                      </div>
+                      <span className="text-truck-gray-medium text-sm mt-2">{brand.name}</span>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <div className="flex justify-center gap-2 mt-4">
+                <CarouselPrevious className="relative static translate-y-0 left-0" />
+                <CarouselNext className="relative static translate-y-0 right-0" />
               </div>
-            ))}
+            </Carousel>
           </div>
-        </ScrollArea>
+        ) : (
+          <ScrollArea className="w-full whitespace-nowrap rounded-md">
+            <div className="flex space-x-12 py-4">
+              {brands.map((brand) => (
+                <div key={brand.name} className="flex flex-col items-center shrink-0">
+                  <div className="w-32 h-32 bg-white flex items-center justify-center p-4">
+                    <img 
+                      src={brand.logo} 
+                      alt={`Logo ${brand.name}`} 
+                      className="max-w-full max-h-full object-contain transition-all duration-300"
+                    />
+                  </div>
+                  <span className="text-truck-gray-medium text-sm mt-2">{brand.name}</span>
+                </div>
+              ))}
+            </div>
+          </ScrollArea>
+        )}
       </div>
     </section>
   );

@@ -75,7 +75,7 @@ const ServicesPage = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="border border-gray-100 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div key={index} className="border border-gray-100 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow bg-white">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="bg-truck-red/10 p-3 rounded-md">
                     <service.icon className="h-6 w-6 text-truck-red" />
