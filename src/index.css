@@ -47,7 +47,8 @@
   }
 
   .service-card {
-    @apply relative overflow-hidden rounded-lg p-6 border bg-white shadow-sm transition-all hover:shadow-md hover:-translate-y-1;
+    @apply relative overflow-hidden rounded-lg p-6 border shadow-sm transition-all hover:shadow-md hover:-translate-y-1;
+    background-color: white !important;
   }
 
   .service-card::before {

@@ -10,7 +10,7 @@ interface ServiceCardProps {
 
 const ServiceCard = ({ title, description, icon: Icon }: ServiceCardProps) => {
   return (
-    <Card className="service-card bg-white">
+    <Card className="service-card" style={{ backgroundColor: 'white' }}>
       <CardHeader className="pb-2">
         <div className="flex items-center gap-3">
           <div className="bg-truck-red/10 p-2 rounded-md">
