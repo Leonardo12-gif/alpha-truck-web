@@ -93,5 +93,49 @@
   .animate-soft-pulse {
     animation: soft-pulse 3s infinite;
   }
-}
 
+  /* Adicionando novas animações */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  /* Animação de brilho */
+  @keyframes shine {
+    0% {
+      background-position: -200% center;
+    }
+    100% {
+      background-position: 200% center;
+    }
+  }
+
+  .animate-shine {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.8) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-size: 200% 100%;
+    animation: shine 3s infinite;
+  }
+
+  /* Animação para os testimoniais */
+  .testimonial-card {
+    @apply transition-all duration-300;
+  }
+
+  .testimonial-card:hover {
+    @apply shadow-lg -translate-y-2 border-truck-red/20;
+    transform: scale(1.03);
+  }
+}

@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 
 const AboutSection = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
   
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -63,14 +64,22 @@ const AboutSection = () => {
             </Button>
           </div>
           
-          <div className="relative about-image">
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-truck-red opacity-30 rounded-full"></div>
+          <div 
+            className="relative about-image overflow-hidden rounded-lg" 
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <div className="absolute -top-4 -left-4 w-24 h-24 bg-truck-red opacity-30 rounded-full animate-pulse"></div>
             <img 
-              src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
-              alt="Oficina ALPHA TRUCK" 
-              className={`rounded-lg shadow-xl w-full h-[400px] object-cover relative z-10 transition-all duration-1000 transform ${isVisible ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}
+              src="/lovable-uploads/c433d43b-2cf6-4aae-b800-395eb5694d7b.png" 
+              alt="Caminhão Volvo ALPHA TRUCK" 
+              className={`rounded-lg shadow-xl w-full h-[400px] object-cover relative z-10 transition-all duration-1000 ${
+                isVisible ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
+              } ${
+                isHovered ? 'scale-105 brightness-110' : ''
+              }`}
             />
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-truck-red opacity-20 rounded-full"></div>
+            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-truck-red opacity-20 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
           </div>
         </div>
       </div>
@@ -79,4 +88,3 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
-
