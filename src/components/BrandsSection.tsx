@@ -34,11 +34,11 @@ const BrandsSection = () => {
                 {brands.map((brand) => (
                   <CarouselItem key={brand.name} className="basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
                     <div className="flex flex-col items-center h-full">
-                      <div className="w-32 h-32 bg-white flex items-center justify-center p-4">
+                      <div className="w-32 h-32 bg-white flex items-center justify-center p-4 overflow-hidden">
                         <img 
                           src={brand.logo} 
                           alt={`Logo ${brand.name}`} 
-                          className="max-w-full max-h-full object-contain transition-all duration-300"
+                          className="max-w-full max-h-full object-contain transition-all duration-300 hover:scale-110"
                         />
                       </div>
                       <span className="text-truck-gray-medium text-sm mt-2">{brand.name}</span>
@@ -57,11 +57,11 @@ const BrandsSection = () => {
             <div className="flex space-x-12 py-4">
               {brands.map((brand) => (
                 <div key={brand.name} className="flex flex-col items-center shrink-0">
-                  <div className="w-32 h-32 bg-white flex items-center justify-center p-4">
+                  <div className="w-32 h-32 bg-white flex items-center justify-center p-4 overflow-hidden">
                     <img 
                       src={brand.logo} 
                       alt={`Logo ${brand.name}`} 
-                      className="max-w-full max-h-full object-contain transition-all duration-300"
+                      className="max-w-full max-h-full object-contain transition-all duration-300 hover:scale-110"
                     />
                   </div>
                   <span className="text-truck-gray-medium text-sm mt-2">{brand.name}</span>

@@ -22,7 +22,8 @@ const Navbar = () => {
             <img 
               src="/lovable-uploads/d76370a7-a58b-40cf-aa1e-ecd3da948e01.png" 
               alt="ALPHA TRUCK Logo" 
-              className="h-12"
+              className="h-12 transition-transform duration-300 hover:scale-105 animate-pulse"
+              style={{ animationDuration: '3s' }}
             />
           </Link>
 

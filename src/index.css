@@ -67,4 +67,31 @@
   .hover-scale {
     @apply transition-transform duration-200 hover:scale-105;
   }
+
+  /* Animação para que as imagens nas marcas fiquem com zoom */
+  .hover-zoom-in {
+    @apply transition-transform duration-300 ease-in-out hover:scale-110;
+  }
+
+  /* Animação suave de fade in para elementos */
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  /* Animação de pulsação personalizada */
+  @keyframes soft-pulse {
+    0%, 100% { 
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% { 
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+  }
+  
+  .animate-soft-pulse {
+    animation: soft-pulse 3s infinite;
+  }
 }
+

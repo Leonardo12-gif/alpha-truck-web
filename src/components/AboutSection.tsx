@@ -2,8 +2,30 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const AboutSection = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        setIsVisible(true);
+      }
+    }, { threshold: 0.3 });
+    
+    const imageSection = document.querySelector('.about-image');
+    if (imageSection) {
+      observer.observe(imageSection);
+    }
+    
+    return () => {
+      if (imageSection) {
+        observer.unobserve(imageSection);
+      }
+    };
+  }, []);
+
   return (
     <section className="py-20 bg-white" id="sobre">
       <div className="container mx-auto px-4">
@@ -41,12 +63,12 @@ const AboutSection = () => {
             </Button>
           </div>
           
-          <div className="relative">
+          <div className="relative about-image">
             <div className="absolute -top-4 -left-4 w-24 h-24 bg-truck-red opacity-30 rounded-full"></div>
             <img 
               src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
               alt="Oficina ALPHA TRUCK" 
-              className="rounded-lg shadow-xl w-full h-[400px] object-cover relative z-10"
+              className={`rounded-lg shadow-xl w-full h-[400px] object-cover relative z-10 transition-all duration-1000 transform ${isVisible ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}
             />
             <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-truck-red opacity-20 rounded-full"></div>
           </div>
@@ -57,3 +79,4 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
+
