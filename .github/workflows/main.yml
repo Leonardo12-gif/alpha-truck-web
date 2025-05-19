@@ -24,10 +24,11 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 16
           cache: 'npm'
       
       - name: Install dependencies
+        # Tenta npm ci primeiro, se falhar usa npm install
         run: npm ci || npm install
       
       - name: Build
@@ -39,7 +40,10 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: './dist'  # Ajuste para './out' se estiver usando Next.js
+          # Ajuste este caminho conforme seu projeto:
+          # './dist' para projetos Vite
+          # './out' para projetos Next.js com exportação estática
+          path: './dist'
 
   deploy:
     environment:
