@@ -32,7 +32,7 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <Badge className="bg-truck-red mb-4">Desde 2005</Badge>
+            <Badge className="bg-truck-red mb-4">Desde 1989</Badge>
             <h2 className="section-title">Por que escolher a ALPHA TRUCK?</h2>
             <p className="text-lg mb-6 text-truck-gray-medium">
               Somos especialistas em manutenção e funilaria de caminhões de todas as marcas e modelos.
