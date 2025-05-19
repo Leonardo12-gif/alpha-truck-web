@@ -1,0 +1,38 @@
+# .github/workflows/main.yml
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+
+    steps:
+      # 1) Checkout the repository
+      - uses: actions/checkout@v3
+
+      # 2) Install Node.js
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      # 3) Install dependencies and build
+      - run: npm ci
+      - run: npm run build
+
+      # 4) Prepare GitHub Pages
+      - uses: actions/configure-pages@v3
+
+      # 5) Upload the build output
+      - uses: actions/upload-pages-artifact@v1
+        with:
+          path: dist
+
+      # 6) Deploy to GitHub Pages
+      - uses: actions/deploy-pages@v1
