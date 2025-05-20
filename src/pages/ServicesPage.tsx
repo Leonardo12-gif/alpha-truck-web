@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Wrench, Settings, Disc, RotateCcw, PaintBucket, PenTool, FilmIcon, Search, Timer, Truck } from "lucide-react";
+import { Wrench, Settings, Disc, RotateCcw, PaintBucket, PenTool, FilmIcon, Search, Timer } from "lucide-react";
 import BrandsSection from "@/components/BrandsSection";
 
 const ServicesPage = () => {
@@ -49,11 +49,6 @@ const ServicesPage = () => {
       title: "Atendimento de Emergência",
       description: "Oferecemos serviço de atendimento de emergência para casos de pane na estrada. Nossa equipe está preparada para resolver problemas rapidamente para que você volte à estrada o quanto antes.",
       icon: Timer
-    },
-    {
-      title: "Instalação de Rastreadores",
-      description: "Proteja sua carga e seu veículo com nossa solução de rastreamento. Instalamos e configuramos rastreadores de última geração para aumentar a segurança nas suas viagens.",
-      icon: Truck
     }
   ];
 
@@ -65,31 +60,37 @@ const ServicesPage = () => {
   };
 
   return (
-    <main>
-      <section className="bg-truck-red py-16">
-        <div className="container mx-auto px-4">
+    <main className="bg-gradient-to-b from-truck-gray-light to-white">
+      <section className="bg-truck-red py-16 relative overflow-hidden">
+        <div className="absolute inset-0 bg-black/50 z-0"></div>
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0aDR2MWgtNHYtMXptMC0yaDF2NWgtMXYtNXptMi0yaDF2MWgtMXYtMXptLTIgMGgxdjFoLTF2LTF6bS0yLTJoMXYxaC0xdi0xeiIvPjwvZz48L2c+PC9zdmc+')] opacity-30 z-0"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center text-white">
-            <h1 className="text-4xl font-bold mb-4">Nossos Serviços</h1>
-            <p className="text-xl opacity-90">
+            <h1 className="text-5xl font-bold mb-6 animate-fade-in tracking-tighter">Nossos Serviços</h1>
+            <p className="text-xl opacity-90 leading-relaxed">
               Oferecemos uma linha completa de serviços de manutenção e
               funilaria para caminhões de todas as marcas e modelos.
             </p>
           </div>
         </div>
+        <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-white/10 to-transparent"></div>
       </section>
 
-      <section className="py-16">
+      <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="border border-gray-100 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow bg-white" style={{ backgroundColor: 'white' }}>
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="bg-truck-red/10 p-3 rounded-md">
-                    <service.icon className="h-6 w-6 text-truck-red" />
+              <div 
+                key={index} 
+                className="border border-gray-200 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 bg-white/80 backdrop-blur-sm hover:scale-[1.02] hover:bg-white/95"
+              >
+                <div className="flex items-center gap-6 mb-6">
+                  <div className="bg-gradient-to-br from-truck-red to-truck-red-light p-4 rounded-lg text-white shadow-md">
+                    <service.icon className="h-8 w-8" />
                   </div>
-                  <h3 className="text-xl font-bold text-truck-gray">{service.title}</h3>
+                  <h3 className="text-2xl font-bold text-truck-gray tracking-tight">{service.title}</h3>
                 </div>
-                <p className="text-truck-gray-medium">{service.description}</p>
+                <p className="text-truck-gray-medium text-lg leading-relaxed">{service.description}</p>
               </div>
             ))}
           </div>
@@ -98,14 +99,17 @@ const ServicesPage = () => {
 
       <BrandsSection />
 
-      <section className="py-16 bg-truck-gray-light">
+      <section className="py-20 bg-gradient-to-b from-white to-truck-gray-light">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="section-title">Precisa de algum serviço?</h2>
-          <p className="section-subtitle max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold mb-8 text-truck-gray">Precisa de algum serviço?</h2>
+          <p className="text-xl max-w-2xl mx-auto mb-12 text-truck-gray-medium">
             Entre em contato conosco para solicitar um orçamento ou tirar
             dúvidas sobre nossos serviços.
           </p>
-          <Button className="bg-truck-red hover:bg-truck-red-light mt-4" size="lg" onClick={handleWhatsAppClick}>
+          <Button 
+            className="bg-truck-red hover:bg-truck-red-light text-xl py-8 px-12 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-float" 
+            onClick={handleWhatsAppClick}
+          >
             Solicitar orçamento
           </Button>
         </div>
