@@ -12,7 +12,7 @@ const Layout = () => {
         <Outlet />
       </div>
       <Footer />
-      <WhatsAppButton phoneNumber="5511996859025" />
+      <WhatsAppButton phoneNumber="15996301830" />
     </>
   );
 };

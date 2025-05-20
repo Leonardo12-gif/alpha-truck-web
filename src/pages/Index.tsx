@@ -5,11 +5,13 @@ import AboutSection from '@/components/AboutSection';
 import BrandsSection from '@/components/BrandsSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import ContactSection from '@/components/ContactSection';
+import VideoSection from '@/components/VideoSection';
 
 const Index = () => {
   return (
     <main>
       <HeroSection />
+      <VideoSection />
       <ServicesSection />
       <AboutSection />
       <BrandsSection />

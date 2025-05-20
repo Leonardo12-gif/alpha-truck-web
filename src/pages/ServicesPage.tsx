@@ -57,6 +57,13 @@ const ServicesPage = () => {
     }
   ];
 
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "15996301830";
+    const message = encodeURIComponent("Olá! Gostaria de solicitar um orçamento para os serviços da ALPHA TRUCK.");
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <main>
       <section className="bg-truck-red py-16">
@@ -98,8 +105,8 @@ const ServicesPage = () => {
             Entre em contato conosco para solicitar um orçamento ou tirar
             dúvidas sobre nossos serviços.
           </p>
-          <Button className="bg-truck-red hover:bg-truck-red-light mt-4" size="lg" asChild>
-            <a href="/contato">Solicitar orçamento</a>
+          <Button className="bg-truck-red hover:bg-truck-red-light mt-4" size="lg" onClick={handleWhatsAppClick}>
+            Solicitar orçamento
           </Button>
         </div>
       </section>
