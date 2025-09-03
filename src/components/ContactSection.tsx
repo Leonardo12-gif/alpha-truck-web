@@ -20,20 +20,40 @@ const ContactSection = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div className="bg-white p-8 rounded-lg shadow-sm flex flex-col items-center justify-center">
-            <h3 className="text-xl font-bold mb-6 text-truck-gray">Fale Conosco</h3>
-            
-            <p className="text-center mb-8 text-truck-gray-medium">
-              Clique no botão abaixo para iniciar uma conversa diretamente no WhatsApp.
-            </p>
-            
-            <Button 
-              onClick={handleWhatsAppClick}
-              className="bg-truck-blue hover:bg-truck-blue-light animate-bounce flex items-center gap-2 text-lg py-6 px-8"
-            >
-              <img src="/lovable-uploads/d9b08b40-52ce-42e8-bdae-88e30cc9152b.png" alt="WhatsApp" className="h-6 w-6" />
-              Conversar no WhatsApp
-            </Button>
+          <div className="space-y-6">
+            {/* Fale Conosco Section */}
+            <div className="bg-white p-8 rounded-lg shadow-sm flex flex-col items-center justify-center">
+              <h3 className="text-xl font-bold mb-6 text-truck-gray">Fale Conosco</h3>
+              
+              <p className="text-center mb-8 text-truck-gray-medium">
+                Clique no botão abaixo para iniciar uma conversa diretamente no WhatsApp.
+              </p>
+              
+              <Button 
+                onClick={handleWhatsAppClick}
+                className="bg-truck-blue hover:bg-truck-blue-light animate-bounce flex items-center gap-2 text-lg py-6 px-8"
+              >
+                <img src="/lovable-uploads/d9b08b40-52ce-42e8-bdae-88e30cc9152b.png" alt="WhatsApp" className="h-6 w-6" />
+                Conversar no WhatsApp
+              </Button>
+            </div>
+
+            {/* Google Maps Section */}
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <h3 className="text-xl font-bold mb-6 text-truck-gray">Nossa Localização</h3>
+              <div className="w-full h-64 rounded-lg overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.123456789!2d-47.45678!3d-23.45678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sRodovia%20Raposo%20Tavares%20Km%20108%2C5%20N%C2%B0%206201%20-%20Parque%20Reserva%20Fazenda%20Imperial%2C%20Sorocaba%20-%20SP%2C%2018052-905!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Localização Alpha Truck"
+                ></iframe>
+              </div>
+            </div>
           </div>
           
           <div>
