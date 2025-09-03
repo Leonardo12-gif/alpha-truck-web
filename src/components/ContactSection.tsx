@@ -43,7 +43,7 @@ const ContactSection = () => {
               <h3 className="text-xl font-bold mb-6 text-truck-gray">Nossa Localização</h3>
               <div className="w-full h-64 rounded-lg overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.8574567894!2d-47.5!3d-23.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zUm9kb3ZpYSBSYXBvc28gVGF2YXJlcyBLbSAxMDgsNSBOwr0gNjIwMSAtIFBhcnF1ZSBSZXNlcnZhIEZhemVuZGEgSW1wZXJpYWwsIFNvcm9jYWJhIC0gU1AsIDE4MDUyLTkwNQ!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
+                  src="https://www.google.com/maps?q=Rodovia+Raposo+Tavares+Km+108,5+N°+6201+Parque+Reserva+Fazenda+Imperial+Sorocaba+SP+18052-905&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
