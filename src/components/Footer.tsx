@@ -49,12 +49,21 @@ const Footer = () => {
         
         <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
           <p>&copy; {currentYear} ALPHA TRUCK. Todos os direitos reservados.</p>
+          
+          {/* Developer credit - centered at bottom */}
+          <div className="mt-4 text-xs opacity-80 hover:opacity-100 transition-opacity">
+            Site desenvolvido por:{" "}
+            <a 
+              href="https://www.instagram.com/frezzamarketing" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-red-400 hover:text-red-300 transition-colors underline decoration-red-400/50 hover:decoration-red-300"
+            >
+              Frezza Marketing ®
+            </a>
+            .
+          </div>
         </div>
-      </div>
-      
-      {/* Developer credit - positioned at bottom left */}
-      <div className="absolute bottom-2 left-2 text-gray-500 text-xs opacity-80 hover:opacity-100 transition-opacity">
-        Site desenvolvido por: Frezza Marketing ®.
       </div>
     </footer>;
 };
