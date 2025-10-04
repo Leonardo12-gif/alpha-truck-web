@@ -12,7 +12,7 @@ interface ServiceCardProps {
 
 const ServiceCard = ({ title, description, icon: Icon, className, style }: ServiceCardProps) => {
   return (
-    <Card className={`service-card backdrop-blur-sm transition-all duration-300 hover:translate-y-[-8px] ${className || ""}`} style={{...style, backgroundColor: 'white'}}>
+    <Card className={`service-card backdrop-blur-sm transition-all duration-300 hover:translate-y-[-8px] ${className || ""}`} style={style}>
       <CardHeader className="pb-2">
         <div className="flex items-center gap-4">
           <div className="bg-gradient-to-br from-truck-red to-truck-red-light p-3 rounded-lg shadow-md">

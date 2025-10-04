@@ -11,7 +11,7 @@ const BrandsSection = () => {
   ];
 
   return (
-    <section className="py-12 bg-white">
+    <section className="py-12 bg-background">
       <div className="container mx-auto px-4">
         <h2 className="text-2xl font-bold text-center text-truck-gray mb-8">
           Marcas que atendemos
@@ -20,7 +20,7 @@ const BrandsSection = () => {
         <Marquee pauseOnHover speed={25} className="mt-8">
           {brands.map((brand) => (
             <div key={brand.name} className="relative h-full w-fit mx-[4rem] flex flex-col items-center justify-center">
-              <div className="w-32 h-32 bg-white flex items-center justify-center p-4 overflow-hidden">
+              <div className="w-32 h-32 bg-card flex items-center justify-center p-4 overflow-hidden rounded-lg border">
                 <img 
                   src={brand.logo} 
                   alt={`Logo ${brand.name}`} 

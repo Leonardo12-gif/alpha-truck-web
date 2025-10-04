@@ -15,12 +15,12 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
   
-  return <nav className="bg-white shadow-sm fixed w-full z-50">
+  return <nav className="bg-background shadow-sm fixed w-full z-50 border-b">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-3">
-            <span className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-truck-red to-truck-red-light bg-clip-text text-transparent tracking-tight">
-              ROTA FORTE TRUCK CENTER
+            <span className="text-3xl md:text-4xl font-black bg-gradient-to-r from-truck-red to-truck-red-light bg-clip-text text-transparent tracking-tight">
+              ROTA FORTE
             </span>
           </Link>
 
@@ -42,7 +42,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile menu */}
-      {isMenuOpen && <div className="md:hidden bg-white p-4 animate-fade-in">
+      {isMenuOpen && <div className="md:hidden bg-background p-4 animate-fade-in border-t">
           <div className="flex flex-col space-y-4">
             <MobileNavLink to="/" onClick={closeMenu}>Início</MobileNavLink>
             <MobileNavLink to="/servicos" onClick={closeMenu}>Serviços</MobileNavLink>

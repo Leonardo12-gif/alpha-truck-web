@@ -5,32 +5,32 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 98%;
+    --foreground: 0 0% 13%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 96%;
+    --card-foreground: 0 0% 13%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 96%;
+    --popover-foreground: 0 0% 13%;
 
     --primary: 0 72% 51%;
-    --primary-foreground: 0 0% 100%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 0 5% 95%;
+    --secondary-foreground: 0 0% 13%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 0 5% 95%;
+    --muted-foreground: 0 0% 40%;
 
     --accent: 0 72% 51%;
-    --accent-foreground: 0 0% 100%;
+    --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
+    --border: 0 5% 88%;
+    --input: 0 5% 88%;
     --ring: 0 72% 51%;
 
     --radius: 0.5rem;
@@ -47,8 +47,7 @@
   }
 
   .service-card {
-    @apply relative overflow-hidden rounded-lg p-6 border shadow-sm transition-all hover:shadow-md hover:-translate-y-1;
-    background-color: white !important;
+    @apply relative overflow-hidden rounded-lg p-6 border shadow-sm transition-all hover:shadow-md hover:-translate-y-1 bg-card;
   }
 
   .service-card::before {
