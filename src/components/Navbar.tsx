@@ -19,12 +19,9 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-3">
-            <img 
-              src="/lovable-uploads/d76370a7-a58b-40cf-aa1e-ecd3da948e01.png" 
-              alt="ALPHA TRUCK Logo" 
-              className="h-12 transition-transform duration-300 hover:scale-105 animate-pulse"
-              style={{ animationDuration: '3s' }}
-            />
+            <span className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-truck-red to-truck-red-light bg-clip-text text-transparent tracking-tight">
+              ROTA FORTE TRUCK CENTER
+            </span>
           </Link>
 
           {/* Desktop menu */}

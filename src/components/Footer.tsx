@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">ALPHA TRUCK</h3>
+            <h3 className="text-xl font-bold mb-4">ROTA FORTE TRUCK CENTER</h3>
             <p className="text-gray-300 mb-4">
               Especialistas em manutenção e funilaria de caminhões.
               Atendemos todos os modelos de caminhões de longa distância.
@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
-          <p>&copy; {currentYear} ALPHA TRUCK. Todos os direitos reservados.</p>
+          <p>&copy; {currentYear} ROTA FORTE TRUCK CENTER. Todos os direitos reservados.</p>
           
           {/* Developer credit - centered at bottom */}
           <div className="mt-4 text-xs opacity-80 hover:opacity-100 transition-opacity">

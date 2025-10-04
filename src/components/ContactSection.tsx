@@ -5,7 +5,7 @@ import { MessageSquare, MapPin, Phone, Mail } from "lucide-react";
 const ContactSection = () => {
   const handleWhatsAppClick = () => {
     const phoneNumber = "15996301830";
-    const message = encodeURIComponent("Olá! Gostaria de mais informações sobre os serviços da ALPHA TRUCK.");
+    const message = encodeURIComponent("Olá! Gostaria de mais informações sobre os serviços da ROTA FORTE.");
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappUrl, '_blank');
   };
@@ -50,7 +50,7 @@ const ContactSection = () => {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Alpha Truck - Rodovia Raposo Tavares Km 108,5 N° 6201 - Parque Reserva Fazenda Imperial, Sorocaba - SP, 18052-905"
+                  title="ROTA FORTE - Rodovia Raposo Tavares Km 108,5 N° 6201 - Parque Reserva Fazenda Imperial, Sorocaba - SP, 18052-905"
                 ></iframe>
               </div>
             </div>

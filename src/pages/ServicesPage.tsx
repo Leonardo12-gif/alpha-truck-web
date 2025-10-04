@@ -54,7 +54,7 @@ const ServicesPage = () => {
 
   const handleWhatsAppClick = () => {
     const phoneNumber = "15996301830";
-    const message = encodeURIComponent("Olá! Gostaria de solicitar um orçamento para os serviços da ALPHA TRUCK.");
+    const message = encodeURIComponent("Olá! Gostaria de solicitar um orçamento para os serviços da ROTA FORTE.");
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappUrl, '_blank');
   };

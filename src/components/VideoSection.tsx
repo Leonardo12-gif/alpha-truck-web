@@ -6,7 +6,7 @@ const VideoSection = () => {
     <section className="py-16 bg-truck-gray-light">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="section-title">Conheça a ALPHA TRUCK</h2>
+          <h2 className="section-title">Conheça a ROTA FORTE</h2>
           <p className="section-subtitle mb-8">
             Assista ao vídeo e conheça mais sobre nossa oficina e serviços
           </p>
@@ -20,7 +20,7 @@ const VideoSection = () => {
               height="100%" 
               allow="autoplay" 
               allowFullScreen
-              title="ALPHA TRUCK - Vídeo de Apresentação"
+              title="ROTA FORTE - Vídeo de Apresentação"
               className="w-full h-full"
             ></iframe>
           </div>

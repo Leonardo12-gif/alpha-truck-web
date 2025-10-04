@@ -64,10 +64,10 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				truck: {
-					blue: '#000000', // alterado para preto
-					'blue-light': '#333333', // alterado para cinza escuro
-					red: '#000000', // alterado para preto
-					'red-light': '#333333', // alterado para cinza escuro
+					blue: '#1a1a1a',
+					'blue-light': '#333333',
+					red: '#DC2626',
+					'red-light': '#EF4444',
 					gray: '#333333',
 					'gray-medium': '#8E9196',
 					'gray-light': '#F6F6F7',

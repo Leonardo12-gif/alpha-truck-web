@@ -33,7 +33,7 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <Badge className="bg-truck-red mb-4">Desde 1989</Badge>
-            <h2 className="section-title">Por que escolher a ALPHA TRUCK?</h2>
+            <h2 className="section-title">Por que escolher a ROTA FORTE?</h2>
             <p className="text-lg mb-6 text-truck-gray-medium">
               Somos especialistas em manutenção e funilaria de caminhões de todas as marcas e modelos.
               Nossa equipe técnica é altamente capacitada e utiliza equipamentos de última geração para
@@ -72,7 +72,7 @@ const AboutSection = () => {
             <div className="absolute -top-4 -left-4 w-24 h-24 bg-truck-red opacity-30 rounded-full animate-pulse"></div>
             <img 
               src="/lovable-uploads/c433d43b-2cf6-4aae-b800-395eb5694d7b.png" 
-              alt="Caminhão Volvo ALPHA TRUCK" 
+              alt="Caminhão Volvo ROTA FORTE" 
               className={`rounded-lg shadow-xl w-full h-[400px] object-cover relative z-10 transition-all duration-1000 ${
                 isVisible ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
               } ${

@@ -9,7 +9,7 @@ interface WhatsAppButtonProps {
 
 const WhatsAppButton = ({
   phoneNumber,
-  message = "Olá! Gostaria de mais informações sobre os serviços da ALPHA TRUCK."
+  message = "Olá! Gostaria de mais informações sobre os serviços da ROTA FORTE."
 }: WhatsAppButtonProps) => {
   const handleClick = () => {
     const encodedMessage = encodeURIComponent(message);
