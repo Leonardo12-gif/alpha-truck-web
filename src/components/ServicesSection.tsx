@@ -34,25 +34,28 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-truck-gray-light relative overflow-hidden" id="servicos">
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMwMDAwMDAiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDM0aDR2MWgtNHYtMXptMC0yaDF2NWgtMXYtNXptMi0yaDF2MWgtMXYtMXptLTIgMGgxdjFoLTF2LTF6bS0yLTJoMXYxaC0xdi0xeiIvPjwvZz48L2c+PC9zdmc+')] opacity-50 pointer-events-none"></div>
-      
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-truck-gray mb-4">Nossos Serviços</h2>
-          <p className="text-xl text-truck-gray-medium max-w-2xl mx-auto">
-            Soluções completas para a manutenção do seu caminhão
+    <section className="py-24 bg-background relative overflow-hidden" id="servicos">
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="text-center mb-20">
+          <div className="inline-block mb-4 px-4 py-1.5 bg-truck-red/10 border border-truck-red/20 rounded-full">
+            <span className="text-truck-red text-sm font-semibold tracking-wide">NOSSOS SERVIÇOS</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-black text-foreground mb-4 tracking-tight">
+            Excelência em cada serviço
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Tecnologia e expertise para manter seu caminhão sempre em perfeitas condições
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {services.map((service, index) => (
             <ServiceCard 
               key={index}
               title={service.title}
               description={service.description}
               icon={service.icon}
-              className="animate-fade-in"
+              className="animate-fade-in hover:border-truck-red/30"
               style={{animationDelay: `${index * 0.1}s`}}
             />
           ))}
@@ -62,7 +65,7 @@ const ServicesSection = () => {
           <Button 
             asChild 
             size="lg" 
-            className="bg-truck-red hover:bg-truck-red-light hover:scale-105 transition-transform duration-300 text-lg px-8 py-6 rounded-full shadow-md hover:shadow-lg"
+            className="bg-truck-red hover:bg-truck-red-light border-0 text-white font-semibold shadow-lg hover:shadow-xl transition-all"
           >
             <Link to="/servicos">Ver todos os serviços</Link>
           </Button>

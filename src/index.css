@@ -47,12 +47,12 @@
   }
 
   .service-card {
-    @apply relative overflow-hidden rounded-lg p-6 border shadow-sm transition-all hover:shadow-md hover:-translate-y-1 bg-card;
+    @apply relative overflow-hidden rounded-xl p-6 border shadow-sm transition-all hover:shadow-lg bg-card;
   }
 
   .service-card::before {
     content: '';
-    @apply absolute top-0 left-0 w-1 h-full bg-truck-red;
+    @apply absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-truck-red to-truck-red-light;
   }
 
   .section-title {

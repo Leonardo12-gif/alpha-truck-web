@@ -15,11 +15,11 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
   
-  return <nav className="bg-background shadow-sm fixed w-full z-50 border-b">
-      <div className="container mx-auto px-4 py-4">
+  return <nav className="bg-background/80 backdrop-blur-md shadow-sm fixed w-full z-50 border-b border-border/50">
+      <div className="container mx-auto px-6 py-3">
         <div className="flex justify-between items-center">
-          <Link to="/" className="flex items-center space-x-3">
-            <span className="text-3xl md:text-4xl font-black bg-gradient-to-r from-truck-red to-truck-red-light bg-clip-text text-transparent tracking-tight">
+          <Link to="/" className="flex items-center">
+            <span className="text-2xl md:text-3xl font-black tracking-tighter text-truck-red">
               ROTA FORTE
             </span>
           </Link>
