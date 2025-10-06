@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import heroBackground from "@/assets/hero-background.jpg";
 
 const HeroSection = () => {
-  return <div className="relative text-white overflow-hidden">
+  return <div className="relative text-white overflow-hidden -mt-[76px] pt-[76px]">
       {/* Background image with overlay */}
       <div className="absolute inset-0">
         <img src={heroBackground} alt="Caminhão em movimento" className="w-full h-full object-cover" />
