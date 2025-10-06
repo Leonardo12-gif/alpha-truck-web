@@ -15,17 +15,17 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
   
-  return <nav className="bg-background/80 backdrop-blur-md shadow-sm fixed w-full z-50 border-b border-border/50">
-      <div className="container mx-auto px-6 py-3">
+  return <nav className="bg-black/90 backdrop-blur-lg fixed w-full z-50 border-b border-white/10">
+      <div className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center">
-            <span className="text-2xl md:text-3xl font-black tracking-tighter text-truck-red">
+            <span className="text-xl md:text-2xl font-bold tracking-tight text-white">
               ROTA FORTE
             </span>
           </Link>
 
           {/* Desktop menu */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center gap-1">
             <NavLink to="/">Início</NavLink>
             <NavLink to="/servicos">Serviços</NavLink>
             <NavLink to="/sobre">Sobre</NavLink>
@@ -34,7 +34,7 @@ const Navbar = () => {
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <Button variant="ghost" size="icon" onClick={toggleMenu} aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}>
+            <Button variant="ghost" size="icon" onClick={toggleMenu} className="text-white hover:bg-white/10" aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}>
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </Button>
           </div>
@@ -42,7 +42,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile menu */}
-      {isMenuOpen && <div className="md:hidden bg-background p-4 animate-fade-in border-t">
+      {isMenuOpen && <div className="md:hidden bg-black/95 backdrop-blur-lg p-6 animate-fade-in border-t border-white/10">
           <div className="flex flex-col space-y-4">
             <MobileNavLink to="/" onClick={closeMenu}>Início</MobileNavLink>
             <MobileNavLink to="/servicos" onClick={closeMenu}>Serviços</MobileNavLink>
@@ -61,7 +61,7 @@ const NavLink = ({
   to: string;
   children: React.ReactNode;
 }) => {
-  return <Link to={to} className="text-truck-gray hover:text-black font-medium transition-colors relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-black after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
+  return <Link to={to} className="text-white/70 hover:text-white font-medium transition-all duration-300 px-4 py-2 rounded-lg hover:bg-white/5">
       {children}
     </Link>;
 };
@@ -76,7 +76,7 @@ const MobileNavLink = ({
   children: React.ReactNode;
   onClick: () => void;
 }) => {
-  return <Link to={to} className="text-truck-gray hover:text-black font-medium py-2 transition-colors" onClick={onClick}>
+  return <Link to={to} className="text-white/70 hover:text-white font-medium py-3 px-4 transition-all duration-300 rounded-lg hover:bg-white/5 block" onClick={onClick}>
       {children}
     </Link>;
 };
