@@ -1,13 +1,13 @@
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import heroBackground from "@/assets/hero-background.jpg";
 
 const HeroSection = () => {
-  return <div className="relative bg-gradient-to-br from-black via-truck-gray to-black text-white overflow-hidden">
-      {/* Modern geometric background */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-truck-red rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-truck-red-light rounded-full blur-3xl"></div>
+  return <div className="relative text-white overflow-hidden">
+      {/* Background image with overlay */}
+      <div className="absolute inset-0">
+        <img src={heroBackground} alt="Caminhão em movimento" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-black/50"></div>
       </div>
       
       <div className="h-[85vh] relative">
