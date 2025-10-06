@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import logo from '@/assets/rota-forte-logo.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,7 +39,8 @@ const Navbar = () => {
   return <nav className={`bg-black/90 backdrop-blur-lg fixed w-full z-50 transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center gap-3">
+            <img src={logo} alt="Rota Forte Logo" className="h-10 md:h-12 w-auto" />
             <span className="text-xl md:text-2xl font-bold tracking-tight text-white">
               ROTA FORTE
             </span>

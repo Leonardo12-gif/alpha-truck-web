@@ -1,12 +1,16 @@
-
 import { Link } from "react-router-dom";
+import logo from '@/assets/rota-forte-logo.png';
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return <footer className="bg-truck-gray text-white py-12 relative">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">ROTA FORTE TRUCK CENTER</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <img src={logo} alt="Rota Forte Logo" className="h-16 w-auto" />
+              <h3 className="text-xl font-bold">ROTA FORTE TRUCK CENTER</h3>
+            </div>
             <p className="text-gray-300 mb-4">
               Especialistas em manutenção e funilaria de caminhões.
               Atendemos todos os modelos de caminhões de longa distância.
