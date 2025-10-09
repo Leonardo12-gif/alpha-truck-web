@@ -12,8 +12,8 @@ const VideoSection = () => {
           </p>
         </div>
         
-        <div className="max-w-4xl mx-auto">
-          <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
+        <div className="max-w-2xl mx-auto">
+          <div className="aspect-[9/16] rounded-lg overflow-hidden shadow-lg">
             <iframe 
               src="https://drive.google.com/file/d/1vIQi-DMLO7CfjgHd0MFam8usskC7KMVT/preview" 
               width="100%" 
