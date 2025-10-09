@@ -81,7 +81,7 @@ const ContactSection = () => {
                   <Mail className="h-5 w-5 text-truck-blue mr-3 mt-1" />
                   <div>
                     <h4 className="font-medium text-truck-gray">E-mail</h4>
-                    <p className="text-truck-gray-medium">rota.fortetruck@gmail.com</p>
+                    <p className="text-truck-gray-medium">rotaforte.truck@gmail.com</p>
                   </div>
                 </div>
                 
