@@ -3,9 +3,9 @@ import React from 'react';
 
 const VideoSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
+    <section className="py-20 bg-white relative overflow-hidden">
       {/* Animated grid background */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
           backgroundImage: 'linear-gradient(rgba(239, 68, 68, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(239, 68, 68, 0.1) 1px, transparent 1px)',
           backgroundSize: '50px 50px'
@@ -13,19 +13,19 @@ const VideoSection = () => {
       </div>
       
       {/* Glowing orbs */}
-      <div className="absolute top-20 left-20 w-64 h-64 bg-truck-red rounded-full blur-3xl opacity-20 animate-pulse"></div>
-      <div className="absolute bottom-20 right-20 w-64 h-64 bg-blue-600 rounded-full blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '1.5s' }}></div>
+      <div className="absolute top-20 left-20 w-64 h-64 bg-truck-red rounded-full blur-3xl opacity-5 animate-pulse"></div>
+      <div className="absolute bottom-20 right-20 w-64 h-64 bg-blue-600 rounded-full blur-3xl opacity-5 animate-pulse" style={{ animationDelay: '1.5s' }}></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12 space-y-4">
           <div className="inline-block">
-            <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent mb-2 animate-fade-in">
+            <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-truck-gray via-truck-gray-medium to-truck-gray bg-clip-text text-transparent mb-2 animate-fade-in">
               Conheça a ROTA FORTE
             </h2>
             <div className="h-1 w-32 mx-auto bg-gradient-to-r from-transparent via-truck-red to-transparent rounded-full"></div>
           </div>
           
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto animate-fade-in">
+          <p className="text-lg text-truck-gray-medium max-w-2xl mx-auto animate-fade-in">
             Assista ao vídeo e conheça mais sobre nossa oficina e serviços
           </p>
         </div>

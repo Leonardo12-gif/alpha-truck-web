@@ -28,9 +28,9 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <section className="py-20 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 relative overflow-hidden" id="sobre">
+    <section className="py-20 bg-white relative overflow-hidden" id="sobre">
       {/* Animated background elements */}
-      <div className="absolute inset-0 opacity-20">
+      <div className="absolute inset-0 opacity-5">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-truck-red rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
       </div>
@@ -42,11 +42,11 @@ const AboutSection = () => {
               Desde 1989
             </Badge>
             
-            <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent animate-fade-in">
+            <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-truck-gray via-truck-gray-medium to-truck-gray bg-clip-text text-transparent animate-fade-in">
               Por que escolher a ROTA FORTE?
             </h2>
             
-            <p className="text-lg text-gray-300 leading-relaxed animate-fade-in">
+            <p className="text-lg text-truck-gray-medium leading-relaxed animate-fade-in">
               Somos especialistas em manutenção e funilaria de caminhões de todas as marcas e modelos.
               Nossa equipe técnica é altamente capacitada e utiliza equipamentos de última geração para
               oferecer os melhores serviços para o seu veículo.
@@ -61,15 +61,15 @@ const AboutSection = () => {
               ].map((item, index) => (
                 <div 
                   key={index}
-                  className="group flex items-start p-4 rounded-xl bg-gradient-to-r from-white/5 to-white/0 border border-white/10 hover:border-truck-red/50 hover:bg-white/10 transition-all duration-300 animate-fade-in backdrop-blur-sm"
+                  className="group flex items-start p-4 rounded-xl bg-gradient-to-r from-gray-50 to-white border border-gray-200 hover:border-truck-red/50 hover:shadow-lg transition-all duration-300 animate-fade-in"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-gradient-to-br from-truck-red to-red-600 flex items-center justify-center text-white font-bold mr-4 shadow-lg shadow-truck-red/30 group-hover:scale-110 transition-transform">
                     ✓
                   </span>
                   <div>
-                    <p className="text-white font-semibold mb-1">{item.title}</p>
-                    <p className="text-gray-400 text-sm">{item.desc}</p>
+                    <p className="text-truck-gray font-semibold mb-1">{item.title}</p>
+                    <p className="text-truck-gray-medium text-sm">{item.desc}</p>
                   </div>
                 </div>
               ))}
