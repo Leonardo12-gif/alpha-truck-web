@@ -47,7 +47,7 @@ const VideoSection = () => {
               {/* Video */}
               <div className="aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl relative">
                 <iframe 
-                  src="https://drive.google.com/file/d/1vIQi-DMLO7CfjgHd0MFam8usskC7KMVT/preview" 
+                  src="https://drive.google.com/file/d/1NfxjFrXRFKF84S2mnzfnRTQ2A6YTn6uo/preview" 
                   width="100%" 
                   height="100%" 
                   allow="autoplay" 
