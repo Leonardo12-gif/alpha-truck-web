@@ -4,7 +4,7 @@ import { MessageSquare, MapPin, Phone, Mail } from "lucide-react";
 
 const ContactSection = () => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = "15996301830";
+    const phoneNumber = "5511956083079";
     const message = encodeURIComponent("Olá! Gostaria de mais informações sobre os serviços da ROTA FORTE.");
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappUrl, '_blank');
@@ -43,14 +43,14 @@ const ContactSection = () => {
               <h3 className="text-xl font-bold mb-6 text-truck-gray">Nossa Localização</h3>
               <div className="w-full h-64 rounded-lg overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps?q=Rodovia+Raposo+Tavares+Km+108,5+N°+6201+Parque+Reserva+Fazenda+Imperial+Sorocaba+SP+18052-905&output=embed"
+                  src="https://www.google.com/maps?q=Rua+Ipê+Amarelo+295+Cantagalo+Itu+SP&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="ROTA FORTE - Rodovia Raposo Tavares Km 108,5 N° 6201 - Parque Reserva Fazenda Imperial, Sorocaba - SP, 18052-905"
+                  title="ROTA FORTE - Rua Ipê Amarelo, 295 - B. Cantagalo - ITU - SP"
                 ></iframe>
               </div>
             </div>
@@ -65,7 +65,7 @@ const ContactSection = () => {
                   <MapPin className="h-5 w-5 text-truck-blue mr-3 mt-1" />
                   <div>
                     <h4 className="font-medium text-truck-gray">Endereço</h4>
-                    <p className="text-truck-gray-medium">Rodovia Raposo Tavares Km 108,5 N° 6201 - Parque Reserva Fazenda Imperial, Sorocaba - SP, 18052-905</p>
+                    <p className="text-truck-gray-medium">Rua Ipê Amarelo, 295 - B. Cantagalo - ITU - SP (Próximo à Heineken)</p>
                   </div>
                 </div>
                 
@@ -73,7 +73,7 @@ const ContactSection = () => {
                   <Phone className="h-5 w-5 text-truck-blue mr-3 mt-1" />
                   <div>
                     <h4 className="font-medium text-truck-gray">Telefone</h4>
-                    <p className="text-truck-gray-medium">(15) 99630-1830</p>
+                    <p className="text-truck-gray-medium">(11) 95608-3079</p>
                   </div>
                 </div>
                 
@@ -89,7 +89,7 @@ const ContactSection = () => {
                   <MessageSquare className="h-5 w-5 text-truck-blue mr-3 mt-1" />
                   <div>
                     <h4 className="font-medium text-truck-gray">WhatsApp</h4>
-                    <p className="text-truck-gray-medium">(15) 99630-1830</p>
+                    <p className="text-truck-gray-medium">(11) 95608-3079</p>
                   </div>
                 </div>
               </div>
