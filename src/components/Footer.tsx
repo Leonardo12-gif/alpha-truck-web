@@ -45,9 +45,9 @@ const Footer = () => {
           
           <div>
             <h3 className="text-xl font-bold mb-4">Contato</h3>
-            <p className="text-gray-300 mb-2">Telefone: (15) 99630-1830</p>
+            <p className="text-gray-300 mb-2">Telefone: (11) 95608-3079</p>
             <p className="text-gray-300 mb-2">Email: rotaforte.truck@gmail.com</p>
-            <p className="text-gray-300 mb-2">Endereço: Rodovia Raposo Tavares Km 108,5 N° 6201 - Parque Reserva Fazenda Imperial, Sorocaba - SP, 18052-905.</p>
+            <p className="text-gray-300 mb-2">Endereço: Rua Ipê Amarelo, 295 - B. Cantagalo - ITU - SP (Próximo à Heineken)</p>
           </div>
         </div>
         
